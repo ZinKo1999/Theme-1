@@ -1,7 +1,14 @@
 // 👇️ add data 👇️
-let name = "Aung Linn Khant";
+let username = "Aung Linn Khant";
 let job = "photographer";
 let aboutme = "I proved talented since young, studying arts at the local Arts School since 11 and by 15 was already using my first camera. Certified photographer from 2015, I am showing creativity and continuous improvement."
+let facebook = "a";
+let instagram = "a";
+let email = "a";
+let twitter ="a";
+let telegram = "a";
+let phone ="a";
+
 // End
 
 
@@ -23,6 +30,7 @@ let photoshop = "<div class='grid-item'> <span> <h3>Photoshop</h3> </span> <img 
 let programming = "<div class='grid-item'> <span> <h3>Programming</h3> </span> <img src='images/icons/Programming.png'/> </div>";
 let videoediting = "<div class='grid-item'> <span> <h3>Video Editing</h3> </span> <img src='images/icons/Video Editing.png'/> </div>";
 
+//veriables
 const nameid = document.getElementById("name");
 const nameinheroid = document.getElementById("nameinhero");
 const aboutmeid = document.getElementById("aboutme");
@@ -34,12 +42,21 @@ const skill4id = document.getElementById("skill4");
 const skill5id = document.getElementById("skill5");
 const skill6id = document.getElementById("skill6");
 const footerid = document.getElementById("footer_text");
+const footernameid = document.getElementById("footername");
+const facebookid = document.getElementById("facebook");
+const instagramid = document.getElementById("instagram");
+const emailid = document.getElementById("email");
+const twitterid = document.getElementById("twitter");
+const telegramid = document.getElementById("telegram");
+const phoneid = document.getElementById("phone");
+
 // End Don't Touch
 
 
 
 
 // 👇️ add skills to html 👇️
+// write -noskill- if there is no skill
 skill1id.innerHTML = videoediting;
 skill2id.innerHTML = photoshop;
 skill3id.innerHTML = illustration;
@@ -53,11 +70,20 @@ skill6id.innerHTML = graphicdesign;
 
 
 //  add details to html 
-nameid.innerHTML = name;
-nameinheroid.innerHTML = "hi, i'm "+ name;
+nameid.innerHTML = username;
+nameinheroid.innerHTML = "hi, i'm "+ username;
+footernameid.innerHTML = username;
 jobid.innerHTML = "I am a "+ job +".";
 aboutmeid.innerHTML = aboutme;
+facebookid.href = facebook; 
+instagramid.href = instagram; 
+emailid.href = email; 
+twitterid.href = twitter; 
+telegramid.href = telegram; 
+phoneid.href = phone; 
 
+//change web title
+document.title = username;
 
 
 /*popup
