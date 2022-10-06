@@ -2,12 +2,12 @@
 let username = "Aung Linn Khant";
 let job = "photographer";
 let aboutme = "I proved talented since young, studying arts at the local Arts School since 11 and by 15 was already using my first camera. Certified photographer from 2015, I am showing creativity and continuous improvement."
-let facebook = "a";
-let instagram = "a";
-let email = "a";
-let twitter ="a";
-let telegram = "a";
-let phone ="a";
+let facebook = "";
+let instagram = "";
+let email = "";
+let twitter ="";
+let telegram = "";
+let phone ="";
 
 // End
 
