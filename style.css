@@ -9,10 +9,18 @@
 
 
 
+ :root {
+  --font-family: 'Poppins', cursive;
+  --maincolor: #066ff0;
+}
 
 
 
-
+ .toplogo{
+  width: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
 
  
 
@@ -26,14 +34,14 @@ a.active {
 }
 
 a {
-    color: #1ee2e7;
+    color: var(--maincolor);
 }
 
 a:hover,
 a:focus,
 a:active,
 a.active {
-    color: #17d0d5;
+    color: var(--maincolor);
 }
 
 
@@ -50,12 +58,12 @@ a.active {
 }
 
 .btn-primary {
-    border-color: #1ee2e7;
+    border-color: var(--maincolor);
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     color: #fff;
-    background-color: #1ee2e7;
+    background-color: var(--maincolor);
 }
 
 .btn-primary:hover,
@@ -63,9 +71,9 @@ a.active {
 .btn-primary:active,
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
-    border-color: #17d0d5;
+    border-color: var(--maincolor);
     color: #fff;
-    background-color: #17d0d5;
+    background-color: var(--maincolor);
 }
 
 .btn-primary:active,
@@ -89,12 +97,12 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-    border-color: #1ee2e7;
-    background-color: #1ee2e7;
+    border-color: var(--maincolor);
+    background-color: var(--maincolor);
 }
 
 .btn-primary .badge {
-    color: #1ee2e7;
+    color: var(--maincolor);
 }
 
 
@@ -105,7 +113,7 @@ fieldset[disabled] .btn-primary.active {
 
 
 .navbar-default .navbar-brand {
-  color: #1ee2e7;
+  color: #4e94eb;
   font-family: 'Staatliches', cursive;
   font-weight: 500;
 	font-size: 5rem;
@@ -123,7 +131,7 @@ fieldset[disabled] .btn-primary.active {
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:active,
 .navbar-default .navbar-brand.active {
-    color: #fec503;
+    color: #066ff0;
 }
 
 .navbar-default .navbar-collapse {
@@ -131,17 +139,17 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .navbar-default .navbar-toggle {
-    border-color: #1ee2e7;
-    background-color: #1ee2e7;
+    border-color: var(--maincolor);
+    background-color: var(--maincolor);
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: #fff;
+    background-color: #fff;;
 }
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-    background-color: #1ee2e7;
+    background-color: var(--maincolor);
 }
 
 .navbar-default .nav li a {
@@ -156,19 +164,19 @@ fieldset[disabled] .btn-primary.active {
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
     outline: 0;
-    color: #1ee2e7;
+    color: var(--maincolor);
 }
 
 .navbar-default .navbar-nav>.active>a {
     border-radius: 0;
     color: #fff;
-    background-color: #1ee2e7;
+    background-color: var(--maincolor);
 }
 
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
     color: #fff;
-    background-color: #17d0d5;
+    background-color: var(--maincolor);
 }
 
 
@@ -236,7 +244,7 @@ body{
 
 
 .hero {
-	height: 700px;
+	height: 800px;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -280,6 +288,58 @@ body{
 	justify-content: center;
 	padding: 5rem;
 	flex: 1;
+}
+
+.contact-button {
+	align-self: flex-start;
+	background-color: #1e5daa;
+	color: white;
+	font-size: 2.5rem;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+	padding-top: 0.4rem;
+	padding-bottom: 0.25rem;
+	border-radius: 0.75rem;
+	margin-bottom: 2rem;
+}
+
+.contact-button:hover {
+  font-weight: 500;
+  color: #cbe2ff;
+	cursor: pointer;
+	background-color: #0d2b50;
+  text-decoration: none;
+}
+
+.social-links-hero {
+	font-size: 4rem;
+	color: rgb(20, 59, 20);
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.social-links-hero .icon {
+  color: #1e5daa;
+  width: 4.1rem;
+	height: 4.1rem;
+	/* background-color: rgb(245, 245, 245);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	border-radius: 50%;
+  box-shadow: #222 1px 1px 3px; */
+	margin-right: 0.5rem;
+	cursor: pointer;
+  text-decoration: none;
+  
+}
+
+.social-links-hero .icon:hover {
+	/* background-color: rgb(0, 0, 0); */
+	color: #0d2b50;
 }
 
 .person_image {
